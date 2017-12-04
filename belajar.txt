@@ -5,36 +5,19 @@
 	<title>Latian</title>
 </head>
 <body>
-<button id="button" type="button">Klik</button>
+<button id="button" type="button">Lihat Waktu</button>
 <h1 id="heading"></h1>
 <script>
 	var heading= document.getElementById('heading');
 	var button= document.getElementById('button');
-	/*
-	button.addEventListener('mouseover',function(){
-		heading.innerHTML= 'Di Klik';
-		heading.style.color= 'blue';
-		heading.id= 'yes';
-	});
-	button.addEventListener('mouseout',function(){
-		heading.innerHTML= 'Hai Hai';
-		heading.style.color= 'black';
-		heading.id= 'heading';
-	});
-	button.addEventListener('click',function(){
-		document.removeChild('h1');
-	});
-	*/
 	function printTime() {
 		var time =  new Date();
 		heading.innerHTML = time;
 		setTimeout(printTime,1000);
 	}
 	button.addEventListener("click",function(){
-		setTimeout(printTime,10);
+		setTimeout(printTime,1000);
 	});
-	//printTime();
-
 </script>
 </body>
 </html>
