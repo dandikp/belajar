@@ -6,13 +6,13 @@
 </head>
 <body>
 <button id="button" type="button">Lihat Waktu</button>
-<h1 id="heading"></h1>
+<h1 id="waktu"></h1>
 <script>
-	var heading= document.getElementById('heading');
+	var waktu= document.getElementById('waktu');
 	var button= document.getElementById('button');
 	function printTime() {
 		var time =  new Date();
-		heading.innerHTML = time;
+		waktu.innerHTML = time;
 		setTimeout(printTime,1000);
 	}
 	button.addEventListener("click",function(){
